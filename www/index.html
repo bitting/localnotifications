@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title> Local Notification </title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+  </head>
+
+  <body class="platform-android" ng-app="NotifyApp" ng-controller="NotifyCtrl">
+
+    <ion-header-bar class="bar-positive">
+       <h1 class="title">Local Notifications </h1>
+    </ion-header-bar>
+
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+    <script src="app.js"></script>
+
+    <ion-content>
+
+        <br />
+        <input type="date" id="date" name="date"> Date </input>
+        <br />
+        <input type="time" id="time" name="time"> Time </input>
+
+
+        <button class="button button-block button-assertive" ng-click="showPopup()">Set nortfication</button>
+
+    </ion-content>
+
+
+
+  </body>
+</html>
